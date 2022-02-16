@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8C7622D27993DA4001060C7 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C7622C27993DA4001060C7 /* LineView.swift */; };
+		F8C7622F279A4502001060C7 /* IconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C7622E279A4502001060C7 /* IconManager.swift */; };
 		F8E7ECC1279911FA00F010C1 /* Maze_RunnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECC0279911FA00F010C1 /* Maze_RunnerApp.swift */; };
 		F8E7ECC3279911FA00F010C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECC2279911FA00F010C1 /* ContentView.swift */; };
 		F8E7ECC5279911FC00F010C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E7ECC4279911FC00F010C1 /* Assets.xcassets */; };
@@ -14,6 +16,10 @@
 		F8E7ECD2279911FC00F010C1 /* Maze_RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECD1279911FC00F010C1 /* Maze_RunnerTests.swift */; };
 		F8E7ECDC279911FC00F010C1 /* Maze_RunnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECDB279911FC00F010C1 /* Maze_RunnerUITests.swift */; };
 		F8E7ECDE279911FC00F010C1 /* Maze_RunnerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECDD279911FC00F010C1 /* Maze_RunnerUITestsLaunchTests.swift */; };
+		F8E7ECF02799122000F010C1 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECEA2799122000F010C1 /* CellView.swift */; };
+		F8E7ECF12799122000F010C1 /* MyObjservableOject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECEB2799122000F010C1 /* MyObjservableOject.swift */; };
+		F8E7ECF22799122000F010C1 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECEC2799122000F010C1 /* Cell.swift */; };
+		F8E7ECF52799122000F010C1 /* MazeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECEF2799122000F010C1 /* MazeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F8C7622C27993DA4001060C7 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		F8C7622E279A4502001060C7 /* IconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconManager.swift; sourceTree = "<group>"; };
 		F8E7ECBD279911FA00F010C1 /* Maze Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maze Runner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E7ECC0279911FA00F010C1 /* Maze_RunnerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maze_RunnerApp.swift; sourceTree = "<group>"; };
 		F8E7ECC2279911FA00F010C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +52,10 @@
 		F8E7ECD7279911FC00F010C1 /* Maze RunnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Maze RunnerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E7ECDB279911FC00F010C1 /* Maze_RunnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maze_RunnerUITests.swift; sourceTree = "<group>"; };
 		F8E7ECDD279911FC00F010C1 /* Maze_RunnerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maze_RunnerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8E7ECEA2799122000F010C1 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		F8E7ECEB2799122000F010C1 /* MyObjservableOject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyObjservableOject.swift; sourceTree = "<group>"; };
+		F8E7ECEC2799122000F010C1 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		F8E7ECEF2799122000F010C1 /* MazeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MazeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,12 @@
 			children = (
 				F8E7ECC0279911FA00F010C1 /* Maze_RunnerApp.swift */,
 				F8E7ECC2279911FA00F010C1 /* ContentView.swift */,
+				F8E7ECEC2799122000F010C1 /* Cell.swift */,
+				F8E7ECEA2799122000F010C1 /* CellView.swift */,
+				F8E7ECEF2799122000F010C1 /* MazeView.swift */,
+				F8C7622E279A4502001060C7 /* IconManager.swift */,
+				F8E7ECEB2799122000F010C1 /* MyObjservableOject.swift */,
+				F8C7622C27993DA4001060C7 /* LineView.swift */,
 				F8E7ECC4279911FC00F010C1 /* Assets.xcassets */,
 				F8E7ECC6279911FC00F010C1 /* Preview Content */,
 			);
@@ -257,8 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C7622F279A4502001060C7 /* IconManager.swift in Sources */,
 				F8E7ECC3279911FA00F010C1 /* ContentView.swift in Sources */,
+				F8E7ECF52799122000F010C1 /* MazeView.swift in Sources */,
+				F8E7ECF12799122000F010C1 /* MyObjservableOject.swift in Sources */,
+				F8E7ECF22799122000F010C1 /* Cell.swift in Sources */,
 				F8E7ECC1279911FA00F010C1 /* Maze_RunnerApp.swift in Sources */,
+				F8C7622D27993DA4001060C7 /* LineView.swift in Sources */,
+				F8E7ECF02799122000F010C1 /* CellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
