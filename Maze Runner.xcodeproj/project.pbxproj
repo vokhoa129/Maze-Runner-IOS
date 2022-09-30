@@ -17,7 +17,7 @@
 		F8E7ECDC279911FC00F010C1 /* Maze_RunnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECDB279911FC00F010C1 /* Maze_RunnerUITests.swift */; };
 		F8E7ECDE279911FC00F010C1 /* Maze_RunnerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECDD279911FC00F010C1 /* Maze_RunnerUITestsLaunchTests.swift */; };
 		F8E7ECF02799122000F010C1 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECEA2799122000F010C1 /* CellView.swift */; };
-		F8E7ECF12799122000F010C1 /* MyObjservableOject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECEB2799122000F010C1 /* MyObjservableOject.swift */; };
+		F8E7ECF12799122000F010C1 /* MazeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECEB2799122000F010C1 /* MazeViewModel.swift */; };
 		F8E7ECF22799122000F010C1 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECEC2799122000F010C1 /* Cell.swift */; };
 		F8E7ECF52799122000F010C1 /* MazeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7ECEF2799122000F010C1 /* MazeView.swift */; };
 /* End PBXBuildFile section */
@@ -53,7 +53,7 @@
 		F8E7ECDB279911FC00F010C1 /* Maze_RunnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maze_RunnerUITests.swift; sourceTree = "<group>"; };
 		F8E7ECDD279911FC00F010C1 /* Maze_RunnerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maze_RunnerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F8E7ECEA2799122000F010C1 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
-		F8E7ECEB2799122000F010C1 /* MyObjservableOject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyObjservableOject.swift; sourceTree = "<group>"; };
+		F8E7ECEB2799122000F010C1 /* MazeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MazeViewModel.swift; sourceTree = "<group>"; };
 		F8E7ECEC2799122000F010C1 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		F8E7ECEF2799122000F010C1 /* MazeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MazeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		870FA30C28E67E0D00E0F2B7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F8E7ECEC2799122000F010C1 /* Cell.swift */,
+				F8E7ECEA2799122000F010C1 /* CellView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		F8E7ECB4279911FA00F010C1 = {
 			isa = PBXGroup;
 			children = (
@@ -108,11 +117,10 @@
 			children = (
 				F8E7ECC0279911FA00F010C1 /* Maze_RunnerApp.swift */,
 				F8E7ECC2279911FA00F010C1 /* ContentView.swift */,
-				F8E7ECEC2799122000F010C1 /* Cell.swift */,
-				F8E7ECEA2799122000F010C1 /* CellView.swift */,
 				F8E7ECEF2799122000F010C1 /* MazeView.swift */,
+				F8E7ECEB2799122000F010C1 /* MazeViewModel.swift */,
+				870FA30C28E67E0D00E0F2B7 /* Cell */,
 				F8C7622E279A4502001060C7 /* IconManager.swift */,
-				F8E7ECEB2799122000F010C1 /* MyObjservableOject.swift */,
 				F8C7622C27993DA4001060C7 /* LineView.swift */,
 				F8E7ECC4279911FC00F010C1 /* Assets.xcassets */,
 				F8E7ECC6279911FC00F010C1 /* Preview Content */,
@@ -278,7 +286,7 @@
 				F8C7622F279A4502001060C7 /* IconManager.swift in Sources */,
 				F8E7ECC3279911FA00F010C1 /* ContentView.swift in Sources */,
 				F8E7ECF52799122000F010C1 /* MazeView.swift in Sources */,
-				F8E7ECF12799122000F010C1 /* MyObjservableOject.swift in Sources */,
+				F8E7ECF12799122000F010C1 /* MazeViewModel.swift in Sources */,
 				F8E7ECF22799122000F010C1 /* Cell.swift in Sources */,
 				F8E7ECC1279911FA00F010C1 /* Maze_RunnerApp.swift in Sources */,
 				F8C7622D27993DA4001060C7 /* LineView.swift in Sources */,

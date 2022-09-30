@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MazeView: View {
-    @StateObject var viewModel = MyObjservableOject()
+    @StateObject var viewModel = MazeViewModel()
     var body: some View {
         VStack {
             Text("min path: \(viewModel.minPath)")

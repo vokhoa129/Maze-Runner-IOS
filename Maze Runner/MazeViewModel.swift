@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class MyObjservableOject: ObservableObject {
+class MazeViewModel: ObservableObject {
     let COLS = 30
     let ROWS = 30
     var gridCol: [GridItem] {
@@ -26,7 +26,7 @@ class MyObjservableOject: ObservableObject {
     }
 }
 
-extension MyObjservableOject {
+extension MazeViewModel {
     
     func createMaze() -> Void {
         //initial cells
