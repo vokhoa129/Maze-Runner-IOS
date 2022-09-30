@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MazeView: View {
+struct GameView: View {
     @StateObject var viewModel = MazeViewModel()
     var body: some View {
         VStack {
@@ -15,18 +15,17 @@ struct MazeView: View {
             Text("your move: \(viewModel.numberOfMove)")
             ScrollView([.horizontal, .vertical]) {
                 ZStack {
-                    maze
+                    mazeView
                     if viewModel.showHint {
-                        path
+                        pathView
                     }
-                    
                 }
             }
             HStack(alignment: .bottom) {
-                Button(action: {
-                    viewModel.createMaze()
-                    viewModel.numberOfMove = 0
-                }) {
+                //reload
+                Button {
+                    initialMaze()
+                } label: {
                     Image(systemName: IconManager.icReload)
                         .font(.system(size: 40))
                 }
@@ -36,9 +35,9 @@ struct MazeView: View {
                 
                 Spacer()
                 
+                //hint
                 Button {
-                    viewModel.showHint.toggle()
-                    
+                    showHint()
                 } label: {
                     Image(systemName: viewModel.showHint ? IconManager.icUnHint : IconManager.icHint)
                         .font(.system(size: 40))
@@ -54,8 +53,21 @@ struct MazeView: View {
     }
 }
 
-extension MazeView {
-    var maze: some View {
+//MARK: Function
+extension GameView {
+    func initialMaze() {
+        viewModel.createMaze()
+        viewModel.numberOfMove = 0
+    }
+    
+    func showHint() {
+        viewModel.showHint.toggle()
+    }
+}
+
+//MARK: View
+extension GameView {
+    var mazeView: some View {
         LazyHGrid(rows: viewModel.gridCol, spacing: 0) {
             ForEach(viewModel.cells, id: \.id) {cell in
                 ZStack {
@@ -87,17 +99,10 @@ extension MazeView {
         .frame(width: UIScreen.main.bounds.width - 20,height: 600)
     }
     
-    var path: some View {
+    var pathView: some View {
         LazyHGrid(rows: viewModel.gridCol, spacing: 0) {
             ForEach(viewModel.cells, id: \.id) {cell in
                 ZStack {
-//                    Color.red.opacity(0.8)
-//                        .hidden(cell.type == nil)
-//                        .padding(.top, cell.topWall ? 2 : 0)
-//                        .padding(.bottom, cell.bottomWall ? 2 : 0)
-//                        .padding(.trailing, cell.rightWall ? 2 : 0)
-//                        .padding(.leading, cell.leftWall ? 2 : 0)
-                    
                     LineView(cell: cell)
                         .stroke(lineWidth: viewModel.getCellSize() / 4)
                         .foregroundColor(.red)

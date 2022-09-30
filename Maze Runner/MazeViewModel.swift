@@ -9,15 +9,16 @@ import Foundation
 import SwiftUI
 
 class MazeViewModel: ObservableObject {
-    let COLS = 30
-    let ROWS = 30
+    private let COLS = 30
+    private let ROWS = 30
     var gridCol: [GridItem] {
         return [GridItem].init(repeating: GridItem(.fixed(getCellSize()), spacing: 0), count: ROWS)
     }
+    
+    
     @Published var cells = [Cell]()
     @Published var showHint = false
     @Published var current = Cell(col: 0, row: 0)
-    
     @Published var numberOfMove = 0
     var minPath: Int {
         return cells.filter { cell in
