@@ -140,7 +140,9 @@ extension MazeViewModel {
         let width = UIScreen.main.bounds.width - 40
         let height: CGFloat = 600 //UIScreen.main.bounds.height - 200
         var cellSize: CGFloat
-        if width / height < CGFloat(COLS / ROWS) {
+        let ratio = width / height
+        let gridRatio = CGFloat(COLS) / CGFloat(ROWS)
+        if ratio < gridRatio {
             cellSize = width / CGFloat(COLS + 1)
         } else {
             cellSize = height / CGFloat(ROWS + 1)
